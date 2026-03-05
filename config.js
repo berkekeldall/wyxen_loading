@@ -1,7 +1,7 @@
 // Theodoreload Config
 config.language = "english"
 config.logo_use_image = true
-config.logo_image = "logo3.png"
+config.logo_image = "logo4.png"
 config.logo_text = "Theodore"
 config.logo_servername = false
 config.logo_center = false
@@ -76,6 +76,7 @@ config.messages_random_order = true
 config.messages_delay = 5000
 config.messages_fade_duration = 1000
 config.errors_show_ingame = true
+
 
 
 
