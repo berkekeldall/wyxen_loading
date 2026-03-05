@@ -1,0 +1,190 @@
+/* Yeni Hogwarts Temalı CSS */
+html {
+	background-color: #050505; /* Çok hafif sıcak bir siyah */
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    /* Genel metinler için zarif, tırnaklı bir font */
+	font-family: 'Playfair Display', serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 22px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+	color: rgb(235, 235, 235);
+	overflow: hidden;
+	display: none;
+}
+
+video {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#video-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
+#player, #warn { display: none; }
+
+#warn {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background-color: rgba(0,0,0,0.9);
+	color: #d4af37;
+	padding: 20px;
+	top: 0;
+	left: 0;
+}
+
+#header { margin: 0; }
+
+#title {
+    /* Başlık için güçlü, tarihi bir font */
+	font-family: 'Cinzel', serif;
+	font-size: 54px;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 10;
+    text-shadow: 0px 0px 15px rgba(212, 175, 55, 0.6); /* Altın rengi parlama */
+    color: #f4e8c1;
+    letter-spacing: 2px;
+}
+
+#title img {
+	display: block;
+	margin: 0 auto;
+	max-width: 300px;
+	height: auto;
+    filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.3));
+}
+
+#title-text { line-height: 90px; }
+.center #title-image { margin-left: auto; margin-right: auto; }
+
+#subtitle {
+	margin-top: 6px;
+	display: none;
+	font-size: 18px;
+    font-style: italic;
+    color: #c0a062;
+}
+
+#status-container {
+	position: absolute;
+	width: 70%;
+	height: 60px;
+	top: 75%; /* Barı ekranın biraz daha aşağısına aldım, arka planlar daha net görünsün */
+	left: 50%;
+    transform: translateX(-50%);
+	font-size: 22px;
+	line-height: 24px;
+	text-align: center;
+}
+
+#status-left { float: left; font-weight: bold; color: #e6c875; }
+#status-right { float: right; font-weight: bold; font-family: 'Cinzel', serif; color: #e6c875; }
+
+/* --- SİHİRLİ YÜKLEME ÇUBUĞU --- */
+#loading {
+	display: inline-block;
+	width: 100%;
+	height: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.4); /* İnce altın çerçeve */
+    box-shadow: 0 0 10px rgba(0,0,0,0.8), inset 0 0 5px rgba(0,0,0,0.8);
+    margin-top: 8px;
+}
+
+#loading-progress {
+	height: 100%;
+	width: 0%;
+    /* Altın sarısından parlayan açık sarıya degrade geçiş */
+	background: linear-gradient(90deg, #8a6d3b, #d4af37, #fdf5c9);
+	border-radius: 8px;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.8); /* Asa ışığı gibi parlama */
+    transition: width 0.3s ease-out; /* Dolarken yumuşak geçiş */
+}
+
+#messages {
+	display: none;
+	margin-top: 25px;
+	font-size: 28px;
+	line-height: 38px;
+    font-style: italic;
+    color: #f4e8c1;
+    text-shadow: 1px 1px 5px #000, 0px 0px 10px rgba(212, 175, 55, 0.3);
+}
+
+#music {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	display: none;
+	line-height: 24px;
+	font-size: 18px;
+	width: 50%;
+    color: #c0a062;
+}
+
+#music-name { margin-top: 6px; font-size: 24px; font-style: italic; color: #fff;}
+
+#enable-audio {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	display: none;
+	font-size: 32px;
+	padding: 10px 15px;
+	background-color: rgba(0,0,0,0.6);
+    border: 1px solid #d4af37;
+	border-radius: 8px;
+	font-weight: bold;
+    color: #d4af37;
+    transition: all 0.3s;
+}
+
+#enable-audio:hover {
+	cursor: pointer;
+	background-color: rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+#overlay {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+    /* Resmi karartırken aynı zamanda ortadan kenarlara doğru karanlık bir vinyet (vignette) verir */
+	background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+#error-box { position: absolute; margin: 12px; top: 0; right: 0; max-width: 40%; min-width: 100px; }
+.error { position: relative; padding: 10px; background-color: rgba(139, 0, 0, 0.8); border: 1px solid #ff4c4c; border-radius: 4px; margin-top: 6px; }
+.error-title { font-weight: bold; margin-bottom: 6px; font-family: 'Cinzel', serif;}
+.close-button { position: absolute; top: 0; right: 0; margin: 6px; font-weight: bold; }
+.close-button:hover { cursor: pointer; color: #ffcc00; }
