@@ -9,25 +9,27 @@ config.logo_show_info = false
 config.background_use_video = false
 config.background_map_based = false
 config.background_images = [
-  "ananlabanyo1.png",
-  "ananlabanyo2.png",
-  "ananlabanyo3.png",
-  "ananlabanyo4.png",
-  "ananlabanyo5.png",
-  "ananlabanyo6.png",
-  "ananlabanyo7.png",
-  "ananlabany8.png",
-  "ananlabanyo9.png",
-  "ananlabanyo10.png",
-  "ananlabanyo11.png",
-  "yilbasi1.png",
-  "yilbasi2.png",
-  "yilbasi3.png",
-  "yilbasi4.png",
-  "yilbasi5.png",
-  "yilbasi6.png",
-  "yilbasi7.png",
-  "yilbasi8.png",
+  "wyxen1.png",
+  "wyxen2.png",
+  "wyxen3.png",
+  "wyxen4.png",
+  "wyxen5.png",
+  "wyxen6.png",
+  "wyxen7.png",
+  "wyxen8.png",
+  "wyxen9.png",
+  "wyxen10.png",
+  "wyxen11.png",
+  "wyxen12.png",
+  "wyxen13.png",
+  "wyxen15.png",
+  "wyxen16.png",
+  "wyxen17.png",
+  "wyxen18.png",
+  "wyxen19.png",
+  "wyxen20.png",
+  "wyxen21.png",
+  "wyxen22.png"
 ]
 config.background_images_random_order = true
 config.background_images_duration = 5000
@@ -74,6 +76,7 @@ config.messages_random_order = true
 config.messages_delay = 5000
 config.messages_fade_duration = 1000
 config.errors_show_ingame = true
+
 
 
 
