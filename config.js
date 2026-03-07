@@ -64,7 +64,7 @@ config.messages_list = [
 "Hogwarts merdivenleri yine yer değiştirdi, yolu arıyoruz...",
 "Kral Daemon... hayır, Büyü Bakanı Daemon. Kral olan alternatif evrende.",
 "Dolares astronomi kulesini pembeye boyadı, tadilattayız.",
-"Kendrick sağ koluyla sunucu kapılarını tutuyor...",
+"Kendrick sağ koluyla sunucu kapılarını tutuyor... [/do sağ kolu yok. ]",
 "İddia makamı neden anayasayı baştan sona sayıyor? Bir dakika-.. sadece Brayn'ın suçlarını okuyormuş.",
 "Bir gün bir profesör, bir seherbaz ve bir ölüm yiyen ıssız karanlık bir ormanda...",
 "Bugünün kötü haberi geldi. Blake hala hayatta.",
@@ -94,6 +94,7 @@ config.messages_random_order = true
 config.messages_delay = 5000
 config.messages_fade_duration = 1000
 config.errors_show_ingame = true
+
 
 
 
