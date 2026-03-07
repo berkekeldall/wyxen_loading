@@ -58,12 +58,12 @@ config.messages_list = [
 "Baykuşlar veri paketlerini taşıyor, birkaç tanesi yolda.",
 "Platform 9¾ bulunuyor… sunucuya girmeye hazır ol!",
 "Yasak Orman’da Fenrir uluyor, dosyaları başka yoldan indirmeliyiz.",
-"Dolares Astronomi Kulesi'ni pembeye boyamış... Hemen düzeltiyoruz!",
+"Dolores Astronomi Kulesi'ni pembeye boyamış... Hemen düzeltiyoruz!",
 "Şapkanız seçilmeden sunucuya girmek yasaktır.",
 "Görünmezlik pelerini sunucuyu sakladı, arıyoruz.",
 "Hogwarts merdivenleri yine yer değiştirdi, yolu arıyoruz...",
 "Kral Daemon... hayır, Büyü Bakanı Daemon. Kral olan alternatif evrende.",
-"Dolares astronomi kulesini pembeye boyadı, tadilattayız.",
+"Dolores astronomi kulesini pembeye boyadı, tadilattayız.",
 "Kendrick sağ koluyla sunucu kapılarını tutuyor... [/do sağ kolu yok. ]",
 "İddia makamı neden anayasayı baştan sona sayıyor? Bir dakika-.. sadece Brayn'ın suçlarını okuyormuş.",
 "Bir gün bir profesör, bir seherbaz ve bir ölüm yiyen ıssız karanlık bir ormanda...",
@@ -94,6 +94,7 @@ config.messages_random_order = true
 config.messages_delay = 5000
 config.messages_fade_duration = 1000
 config.errors_show_ingame = true
+
 
 
 
