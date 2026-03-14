@@ -62,7 +62,6 @@ config.messages_list = [
 "Şapkanız seçilmeden sunucuya girmek yasaktır.",
 "Görünmezlik pelerini sunucuyu sakladı, arıyoruz.",
 "Hogwarts merdivenleri yine yer değiştirdi, yolu arıyoruz...",
-"Kral Daemon... hayır, Büyü Bakanı Daemon. Kral olan alternatif evrende.",
 "Dolores astronomi kulesini pembeye boyadı, tadilattayız.",
 "Kendrick sağ koluyla sunucu kapılarını tutuyor... [/do sağ kolu yok. ]",
 "İddia makamı neden anayasayı baştan sona sayıyor? Bir dakika-.. sadece Brayn'ın suçlarını okuyormuş.",
