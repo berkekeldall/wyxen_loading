@@ -30,7 +30,6 @@ config.background_images = [
   "wyxen21.png",
   "wyxen22.png",
   "wyxen23.png",
-  "wyxen24.png",
   "wyxen25.png",
   "wyxen26.png",
   "wyxen27.png",
